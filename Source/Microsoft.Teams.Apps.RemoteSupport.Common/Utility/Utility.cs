@@ -4,10 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common
 {
-    using System;
-    using System.Text.RegularExpressions;
-    using System.Web;
-
     /// <summary>
     /// Utility class for common functionality.
     /// </summary>

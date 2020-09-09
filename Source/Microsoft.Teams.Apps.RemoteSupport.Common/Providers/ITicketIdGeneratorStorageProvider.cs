@@ -4,7 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
-    using System.Threading.Tasks;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
 
     /// <summary>

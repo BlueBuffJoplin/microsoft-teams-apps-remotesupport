@@ -4,10 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Models
 {
-    using System.Collections.Generic;
-    using AdaptiveCards;
-    using Newtonsoft.Json;
-
     /// <summary>
     /// InputChoiceSet
     /// </summary>

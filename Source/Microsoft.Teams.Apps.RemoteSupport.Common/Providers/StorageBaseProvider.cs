@@ -4,13 +4,7 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
-    using System;
-    using System.Threading.Tasks;
-    using Microsoft.Extensions.Options;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.WindowsAzure.Storage;
-    using Microsoft.WindowsAzure.Storage.RetryPolicies;
-    using Microsoft.WindowsAzure.Storage.Table;
 
     /// <summary>
     /// Class handles initialization to Azure table storage.

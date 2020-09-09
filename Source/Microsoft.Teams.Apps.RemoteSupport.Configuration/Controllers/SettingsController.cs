@@ -4,10 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Configuration
 {
-    using System;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Extensions.Options;
     using Microsoft.Teams.Apps.RemoteSupport.Configuration.Models;
 
     /// <summary>

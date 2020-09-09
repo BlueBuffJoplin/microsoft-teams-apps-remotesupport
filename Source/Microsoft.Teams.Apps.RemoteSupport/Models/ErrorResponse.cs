@@ -4,8 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Models
 {
-    using Newtonsoft.Json;
-
     /// <summary>
     /// Error response class.
     /// </summary>

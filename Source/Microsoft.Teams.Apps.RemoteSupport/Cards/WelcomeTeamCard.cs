@@ -4,12 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Cards
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using AdaptiveCards;
-    using Microsoft.Bot.Schema;
-    using Microsoft.Extensions.Localization;
     using Microsoft.Teams.Apps.RemoteSupport.Common;
     using Microsoft.Teams.Apps.RemoteSupport.Models;
 

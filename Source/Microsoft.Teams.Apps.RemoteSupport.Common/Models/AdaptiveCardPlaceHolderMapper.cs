@@ -4,8 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
 {
-    using Newtonsoft.Json;
-
     /// <summary>
     /// Class maps controls from json card file to adaptive card.
     /// </summary>

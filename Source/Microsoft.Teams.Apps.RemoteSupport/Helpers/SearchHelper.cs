@@ -4,16 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using System.Web;
-    using AdaptiveCards;
-    using Microsoft.Bot.Schema;
-    using Microsoft.Bot.Schema.Teams;
-    using Microsoft.Extensions.Localization;
     using Microsoft.Teams.Apps.RemoteSupport.Common;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Providers;

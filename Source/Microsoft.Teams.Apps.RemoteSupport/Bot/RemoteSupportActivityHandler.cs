@@ -4,29 +4,12 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Microsoft.ApplicationInsights;
-    using Microsoft.ApplicationInsights.DataContracts;
-    using Microsoft.Bot.Builder;
-    using Microsoft.Bot.Builder.Teams;
-    using Microsoft.Bot.Connector.Authentication;
-    using Microsoft.Bot.Schema;
-    using Microsoft.Bot.Schema.Teams;
-    using Microsoft.Extensions.Localization;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Extensions.Options;
     using Microsoft.Teams.Apps.RemoteSupport.Cards;
     using Microsoft.Teams.Apps.RemoteSupport.Common;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Providers;
     using Microsoft.Teams.Apps.RemoteSupport.Helpers;
     using Microsoft.Teams.Apps.RemoteSupport.Models;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
 
     /// <summary>
     /// The RemoteSupportActivityHandler is responsible for reacting to incoming events from Teams sent from BotFramework.

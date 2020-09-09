@@ -4,9 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Controllers
 {
-    using System.Linq;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
     using Microsoft.Teams.Apps.RemoteSupport.Models;
 
     /// <summary>

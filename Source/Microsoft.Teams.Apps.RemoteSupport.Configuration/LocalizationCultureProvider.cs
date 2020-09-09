@@ -4,13 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport
 {
-    using System;
-    using System.IO;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Localization;
-
     /// <summary>
     /// The BotLocalizationCultureProvider is responsible for implementing the <see cref="IRequestCultureProvider"/> for Bot Activities
     /// received from BotFramework.

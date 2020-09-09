@@ -4,11 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
 {
-    using System;
-    using Microsoft.WindowsAzure.Storage.Table;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Serialization;
-
     /// <summary>
     /// Class contains details of card configuration created in table storage.
     /// </summary>

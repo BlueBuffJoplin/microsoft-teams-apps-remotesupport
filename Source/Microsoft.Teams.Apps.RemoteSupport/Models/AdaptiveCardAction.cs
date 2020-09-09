@@ -4,9 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Models
 {
-    using Microsoft.Bot.Schema;
-    using Newtonsoft.Json;
-
     /// <summary>
     /// Adaptive card action model class.
     /// </summary>

@@ -4,14 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.Azure.Search;
-    using Microsoft.Azure.Search.Models;
-    using Microsoft.Extensions.Options;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
 
     /// <summary>

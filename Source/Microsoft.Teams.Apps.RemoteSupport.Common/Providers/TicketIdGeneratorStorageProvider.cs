@@ -4,14 +4,7 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
-    using System;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Extensions.Options;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.WindowsAzure.Storage;
-    using Microsoft.WindowsAzure.Storage.Table;
 
     /// <summary>
     /// Class generate ticket ids from table storage.
