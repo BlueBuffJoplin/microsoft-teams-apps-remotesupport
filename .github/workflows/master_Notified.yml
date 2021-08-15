@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_PACKAGE_PATH: '.' # set this to the path to your web app project, defaults to the repository root
+  AZURE_FUNCTIONAPP_PACKAGE_PATH: '"C:\Users\g091734\OneDrive - General Mills\Desktop\Remote_Support_App_Template"' # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: 'v1.1.x'  # set this to the dotnet version to use
 
 jobs:
