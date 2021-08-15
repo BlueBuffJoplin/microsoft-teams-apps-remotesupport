@@ -259,7 +259,7 @@
             },
             {
               "name": "UppercaseResponse",
-              "value": false
+              "value": "false"
             },
             {
               "name": "i18n:DefaultCulture",
@@ -316,25 +316,26 @@
     },
     {
       "apiVersion": "2015-05-01",
-      "name": "[variables('botAppInsightsName')]",
-      "type": "Microsoft.Insights/components",
+      "kind": "sdk",
       "location": "[parameters('location')]",
-      "tags": {
-        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('botAppName'))]": "Resource"
-      },
+      "name": "[variables('botAppInsightsName')]",
       "properties": {
         "Application_Type": "web",
         "Request_Source": "rest"
-      }
+      },
+      "tags": {
+        "[concat('hidden-link:', resourceGroup().id, '/providers/Microsoft.Web/sites/', variables('botAppName'))]": "Resource"
+      },
+      "type": "Microsoft.Insights/components"
     },
     {
-      "apiVersion": "2018-07-12",
-      "kind": "sdk",
-      "location": "global",
-      "name": "[variables('botName')]",
+      "apiVersion": "2015-08-19",
       "dependsOn": [
         "[resourceId('Microsoft.Web/sites', variables('botAppName'))]"
       ],
+      "kind": "sdk",
+      "location": "global",
+      "name": "[variables('botName')]",
       "properties": {
         "displayName": "[parameters('appDisplayName')]",
         "description": "[parameters('appDescription')]",
@@ -365,26 +366,26 @@
         }
       ],
       "sku": {
-        "name": "F0"
+        "free": "F0"
       },
-      "type": "Microsoft.BotService/botServices"
+      "type": "Microsoft.Search/searchServices"
     },
     {
-      "type": "Microsoft.Search/searchServices",
       "apiVersion": "2015-08-19",
-      "name": "[variables('azureSearchName')]",
       "location": "[parameters('location')]",
-      "tags": {
-        "isqnamaker": "true"
-      },
-      "sku": {
-        "name": "[toLower(variables('azureSearchSkuValue'))]"
-      },
+      "name": "[variables('azureSearchName')]",
       "properties": {
         "replicaCount": 1,
         "partitionCount": 1,
         "hostingMode": "default"
-      }
+      },
+      "sku": {
+        "name": "[toLower(variables('azureSearchSkuValue'))]"
+      },
+      "tags": {
+        "isqnamaker": "true"
+      },
+      "type": "Microsoft.Search/searchServices"
     }
   ],
   "outputs": {
