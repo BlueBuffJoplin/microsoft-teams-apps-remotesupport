@@ -4,11 +4,10 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
-    using System.Net;
-    using System.Threading.Tasks;
     using Microsoft.Extensions.Options;
     using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.WindowsAzure.Storage.Table;
+    using System.Net;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// Ticket provider helps in fetching and storing information in storage table.

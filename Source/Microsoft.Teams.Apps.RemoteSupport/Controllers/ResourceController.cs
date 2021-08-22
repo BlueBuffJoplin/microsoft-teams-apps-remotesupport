@@ -4,13 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Controllers
 {
-    using System;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Localization;
-    using Microsoft.Extensions.Logging;
-
     /// <summary>
     /// Controller to handle resource strings related request.
     /// </summary>
@@ -64,9 +57,9 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Controllers
                 };
                 return this.Ok(strings);
             }
-            #pragma warning disable CA1031 // Do not catch general exception types
+#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
-            #pragma warning restore CA1031 // Do not catch general exception types
+#pragma warning restore CA1031 // Do not catch general exception types
             {
                 this.logger.LogError(ex, "Error while fetching resource strings.");
                 return this.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);

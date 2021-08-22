@@ -4,18 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Configuration
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Extensions.Options;
-    using Microsoft.Teams.Apps.RemoteSupport.Common;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Providers;
     using Microsoft.Teams.Apps.RemoteSupport.Configuration.Models;
 
     /// <summary>
@@ -50,7 +38,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Configuration
         /// <param name="configurationEntity">Configuration details.</param>
         /// <returns>Task.</returns>
         [HttpPost]
-        public async Task<IActionResult> SaveConfigurationsAsync([FromBody]CardConfigurationEntity configurationEntity)
+        public async Task<IActionResult> SaveConfigurationsAsync([FromBody] CardConfigurationEntity configurationEntity)
         {
             try
             {

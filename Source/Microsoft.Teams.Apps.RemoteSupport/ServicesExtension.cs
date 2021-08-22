@@ -4,21 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Linq;
-    using System.Text;
-    using Microsoft.AspNetCore.Authentication.JwtBearer;
-    using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Localization;
-    using Microsoft.Bot.Builder.BotFramework;
-    using Microsoft.Bot.Connector.Authentication;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.IdentityModel.Tokens;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Providers;
     using Microsoft.Teams.Apps.RemoteSupport.Helpers;
 
     /// <summary>

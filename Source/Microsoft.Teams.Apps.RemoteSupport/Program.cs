@@ -4,11 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport
 {
-    using Microsoft.AspNetCore;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.Logging;
-
     /// <summary>
     /// The Program class is responsible for holding the entry-point of the program.
     /// </summary>

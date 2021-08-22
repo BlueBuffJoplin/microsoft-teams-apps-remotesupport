@@ -4,9 +4,9 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
+    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
 
     /// <summary>
     /// Interface of search service which will help in creating index, indexer and data source if it doesn't exist.

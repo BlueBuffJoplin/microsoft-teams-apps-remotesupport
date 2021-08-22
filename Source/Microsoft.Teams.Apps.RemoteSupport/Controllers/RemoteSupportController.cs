@@ -4,24 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Controllers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Bot.Builder;
-    using Microsoft.Bot.Builder.Teams;
-    using Microsoft.Bot.Connector.Authentication;
-    using Microsoft.Bot.Schema;
-    using Microsoft.Bot.Schema.Teams;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Extensions.Options;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Providers;
-
     /// <summary>
     /// Controller to handle Remote Support API operations.
     /// </summary>
@@ -159,9 +141,9 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Controllers
                 this.logger.LogError(ex, "Failed to get user token to make GET call to API.");
                 return this.GetErrorResponse(StatusCodes.Status401Unauthorized, ex.Message);
             }
-            #pragma warning disable CA1031 // Do not catch general exception types
+#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
-            #pragma warning restore CA1031 // Do not catch general exception types
+#pragma warning restore CA1031 // Do not catch general exception types
             {
                 this.logger.LogError(ex, "Error while getting on call experts list.");
                 throw;
@@ -175,7 +157,7 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Controllers
         /// <returns>Returns true for successful operation.</returns>
         [Route("saveoncallsupportdetails")]
         [HttpPost]
-        public async Task<IActionResult> SaveOnCallSupportDetailsAsync([FromBody]OnCallSupportDetail onCallSupportDetails)
+        public async Task<IActionResult> SaveOnCallSupportDetailsAsync([FromBody] OnCallSupportDetail onCallSupportDetails)
         {
             try
             {
@@ -199,9 +181,9 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Controllers
                 this.logger.LogError(ex, "Failed to get user token to make POST call to API.");
                 return this.GetErrorResponse(StatusCodes.Status401Unauthorized, ex.Message);
             }
-            #pragma warning disable CA1031 // Do not catch general exception types
+#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
-            #pragma warning restore CA1031 // Do not catch general exception types
+#pragma warning restore CA1031 // Do not catch general exception types
             {
                 this.logger.LogError(ex, "Error while saving on call support details.");
                 throw;

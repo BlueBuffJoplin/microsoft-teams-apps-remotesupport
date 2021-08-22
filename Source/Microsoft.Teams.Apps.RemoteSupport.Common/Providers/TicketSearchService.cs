@@ -4,16 +4,14 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
+    using Microsoft.Extensions.Logging;
+    using Microsoft.Extensions.Options;
+    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
     using System;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.Azure.Search;
-    using Microsoft.Azure.Search.Models;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Extensions.Options;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
 
     /// <summary>
     /// SearchService which will help in creating index, indexer and data source if it doesn't exist
@@ -215,18 +213,18 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
         /// <returns><see cref="Task"/> That represents indexer is created if not available in Azure search service.</returns>
         private async Task CreateIndexerAsync()
         {
-                if (!this.searchServiceClient.Indexers.Exists(TicketsIndexerName))
+            if (!this.searchServiceClient.Indexers.Exists(TicketsIndexerName))
+            {
+                var indexer = new Indexer()
                 {
-                    var indexer = new Indexer()
-                    {
-                        Name = TicketsIndexerName,
-                        DataSourceName = TicketsDataSourceName,
-                        TargetIndexName = TicketsIndexName,
-                        Schedule = new IndexingSchedule(TimeSpan.FromMinutes(this.searchIndexingIntervalInMinutes)),
-                    };
+                    Name = TicketsIndexerName,
+                    DataSourceName = TicketsDataSourceName,
+                    TargetIndexName = TicketsIndexName,
+                    Schedule = new IndexingSchedule(TimeSpan.FromMinutes(this.searchIndexingIntervalInMinutes)),
+                };
 
-                    await this.searchServiceClient.Indexers.CreateAsync(indexer);
-                }
+                await this.searchServiceClient.Indexers.CreateAsync(indexer);
+            }
         }
 
         /// <summary>

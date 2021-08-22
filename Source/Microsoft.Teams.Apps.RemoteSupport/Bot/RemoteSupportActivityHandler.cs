@@ -4,29 +4,9 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Microsoft.ApplicationInsights;
-    using Microsoft.ApplicationInsights.DataContracts;
-    using Microsoft.Bot.Builder;
-    using Microsoft.Bot.Builder.Teams;
-    using Microsoft.Bot.Connector.Authentication;
-    using Microsoft.Bot.Schema;
-    using Microsoft.Bot.Schema.Teams;
-    using Microsoft.Extensions.Localization;
-    using Microsoft.Extensions.Logging;
-    using Microsoft.Extensions.Options;
     using Microsoft.Teams.Apps.RemoteSupport.Cards;
-    using Microsoft.Teams.Apps.RemoteSupport.Common;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Providers;
     using Microsoft.Teams.Apps.RemoteSupport.Helpers;
     using Microsoft.Teams.Apps.RemoteSupport.Models;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
 
     /// <summary>
     /// The RemoteSupportActivityHandler is responsible for reacting to incoming events from Teams sent from BotFramework.
@@ -477,9 +457,9 @@ namespace Microsoft.Teams.Apps.RemoteSupport
                 typingActivity.Type = ActivityTypes.Typing;
                 await turnContext.SendActivityAsync(typingActivity);
             }
-            #pragma warning disable CA1031 // Do not catch general exception types
+#pragma warning disable CA1031 // Do not catch general exception types
             catch (Exception ex)
-            #pragma warning restore CA1031 // Do not catch general exception types
+#pragma warning restore CA1031 // Do not catch general exception types
             {
                 // Do not fail on errors sending the typing indicator
                 this.logger.LogWarning(ex, "Failed to send a typing indicator.");

@@ -4,13 +4,8 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using AdaptiveCards;
     using Microsoft.Teams.Apps.RemoteSupport.Cards;
     using Microsoft.Teams.Apps.RemoteSupport.Models;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// Helper class to convert JSON property into Adaptive card element

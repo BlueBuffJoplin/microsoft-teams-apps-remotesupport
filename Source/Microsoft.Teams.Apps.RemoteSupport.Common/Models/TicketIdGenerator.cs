@@ -4,8 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
 {
-    using Microsoft.WindowsAzure.Storage.Table;
-
     /// <summary>
     /// Class contains latest ticket Id details.
     /// </summary>

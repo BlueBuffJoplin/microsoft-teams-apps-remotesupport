@@ -4,8 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
 {
-    using Newtonsoft.Json;
-
     /// <summary>
     /// Class contains details of on call support experts.
     /// </summary>

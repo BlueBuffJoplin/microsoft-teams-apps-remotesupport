@@ -4,17 +4,14 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Providers
 {
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.Options;
+    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
     using System;
     using System.Collections.Generic;
     using System.Globalization;
     using System.Linq;
     using System.Threading.Tasks;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.Options;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.WindowsAzure.Storage.Table;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Linq;
 
     /// <summary>
     /// Card configuration helps in fetching and storing dynamic card configuration in Azure table storage.

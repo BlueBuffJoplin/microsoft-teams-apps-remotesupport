@@ -4,13 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Configuration
 {
-    using System;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Http;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Localization;
-    using Microsoft.Extensions.Logging;
-
     /// <summary>
     /// Controller to handle resource strings related request.
     /// </summary>

@@ -3,13 +3,6 @@
 // </copyright>
 namespace Microsoft.Teams.Apps.RemoteSupport.Helpers
 {
-    using System;
-    using System.Globalization;
-    using Microsoft.Bot.Builder;
-    using Microsoft.Bot.Schema;
-    using Microsoft.Bot.Schema.Teams;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-
     /// <summary>
     /// Handles the ticket activities.
     /// </summary>

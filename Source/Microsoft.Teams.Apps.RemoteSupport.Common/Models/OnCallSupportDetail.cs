@@ -5,10 +5,6 @@
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
 {
     using System;
-    using System.ComponentModel.DataAnnotations;
-    using Microsoft.Azure.Search;
-    using Microsoft.WindowsAzure.Storage.Table;
-    using Newtonsoft.Json;
 
     /// <summary>
     /// Class contains details of on call support team.

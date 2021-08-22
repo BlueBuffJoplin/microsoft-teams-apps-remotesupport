@@ -4,12 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport
 {
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Bot.Builder;
-    using Microsoft.Bot.Builder.Integration.AspNet.Core;
-
     /// <summary>
     /// The BotController is responsible for connecting the Asp.Net MVC pipeline to the <see cref="IBotFrameworkHttpAdapter" />
     /// and the underlying activity handler (<see cref="IBot" />).

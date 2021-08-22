@@ -4,17 +4,8 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Cards
 {
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Linq;
-    using AdaptiveCards;
-    using Microsoft.Bot.Schema;
-    using Microsoft.Extensions.Localization;
-    using Microsoft.Teams.Apps.RemoteSupport.Common;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
     using Microsoft.Teams.Apps.RemoteSupport.Helpers;
     using Microsoft.Teams.Apps.RemoteSupport.Models;
-    using Newtonsoft.Json;
 
     /// <summary>
     ///  Provides adaptive cards for managing on call support team details and viewing on call experts update history.

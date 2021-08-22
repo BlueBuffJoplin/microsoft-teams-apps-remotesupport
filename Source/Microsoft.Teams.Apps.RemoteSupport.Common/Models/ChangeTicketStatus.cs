@@ -4,8 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Common.Models
 {
-    using Newtonsoft.Json;
-
     /// <summary>
     /// Represents the data payload of Action.Submit to change the status of a ticket.
     /// </summary>

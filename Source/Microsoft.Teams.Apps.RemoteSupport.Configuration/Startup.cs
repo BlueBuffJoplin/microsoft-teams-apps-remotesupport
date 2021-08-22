@@ -4,22 +4,7 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Configuration
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Linq;
-    using Microsoft.AspNetCore.Authentication.JwtBearer;
-    using Microsoft.AspNetCore.Builder;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.AspNetCore.Localization;
-    using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Models;
-    using Microsoft.Teams.Apps.RemoteSupport.Common.Providers;
     using Microsoft.Teams.Apps.RemoteSupport.Configuration.Models;
-    using Newtonsoft.Json.Serialization;
 
     /// <summary>
     /// Startup class.

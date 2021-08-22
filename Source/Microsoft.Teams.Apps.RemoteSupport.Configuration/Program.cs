@@ -4,10 +4,6 @@
 
 namespace Microsoft.Teams.Apps.RemoteSupport.Configuration
 {
-    using Microsoft.AspNetCore;
-    using Microsoft.AspNetCore.Hosting;
-    using Microsoft.Extensions.Logging;
-
     /// <summary>
     /// Program main class.
     /// </summary>
