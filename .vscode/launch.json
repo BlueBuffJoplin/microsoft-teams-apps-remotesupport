@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "autojs",
+      "request": "launch",
+      "main": "main.js",
+      "stopOnEntry": true,
+      "device": "[recent]"
+    },
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "Invoke Lambda",
+      "invokeTarget": {
+        "target": "template",
+        "templatePath": "Template Location",
+        "logicalId": "Function Logical ID"
+      },
+      "lambda": {
+        "payload": {
+          "json": {}
+        }
+      }
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "c:\\Users\\g091734\\OneDrive - General Mills\\GitHub\\microsoft-teams-apps-remotesupport",
+      "environment": [],
+      "program": "c:\\Users\\g091734\\OneDrive - General Mills\\GitHub\\microsoft-teams-apps-remotesupport\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "externalConsole": false
+    }
+  ]
+}
